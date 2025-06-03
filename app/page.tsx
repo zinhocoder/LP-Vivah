@@ -315,7 +315,7 @@ export default function Home() {
 
             <div className="group relative overflow-hidden rounded-lg h-80 sm:h-96">
               <Image
-                src="/images/kitchen-island-display.jpeg"
+                src="/images/DRRK5348.JPG"
                 alt="Banheiro planejado com acabamento em espelho"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -517,9 +517,9 @@ export default function Home() {
               <div className="bg-gradient-to-br from-amber-700/50 to-amber-900/30 w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 flex items-center justify-center rounded-full border border-amber-600/40">
                 <Shield className="w-8 h-8 sm:w-10 sm:h-10 text-amber-400" />
               </div>
-              <h3 className="text-lg sm:text-xl text-amber-400 mb-4 text-center font-semibold">5 anos de garantia</h3>
+              <h3 className="text-lg sm:text-xl text-amber-400 mb-4 text-center font-semibold">10 anos de garantia</h3>
               <p className="text-base sm:text-base text-gray-300 leading-relaxed text-center">
-                Oferecemos garantia estendida de 5 anos em todos os nossos móveis, proporcionando segurança e
+                Oferecemos garantia estendida de 10 anos em todos os nossos móveis, proporcionando segurança e
                 tranquilidade para nossos clientes.
               </p>
             </div>
@@ -714,7 +714,7 @@ export default function Home() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <p className="text-white text-sm sm:text-base font-medium">5 anos de garantia</p>
+                      <p className="text-white text-sm sm:text-base font-medium">10 anos de garantia</p>
                     </div>
                   </div>
 
@@ -778,9 +778,9 @@ export default function Home() {
                   <div>
                     <h3 className="text-lg sm:text-xl text-amber-400 mb-2 font-semibold">Endereço</h3>
                     <p className="text-gray-300 text-sm sm:text-base">
-                      Av. Paulista, 1000 - Bela Vista
+                      Rua Joaquim Marques Lisboa, 67
                       <br />
-                      São Paulo - SP, 01310-100
+                      Vila Progresso Jundiai – SP - 13202-170
                     </p>
                   </div>
                 </div>
@@ -811,9 +811,7 @@ export default function Home() {
                   <div>
                     <h3 className="text-lg sm:text-xl text-amber-400 mb-2 font-semibold">E-mail</h3>
                     <p className="text-gray-300 text-sm sm:text-base">
-                      contato@vivahmoveis.com.br
-                      <br />
-                      atendimento@vivahmoveis.com.br
+                      comercial@vivahplanejados.com.br
                     </p>
                   </div>
                 </div>
@@ -984,7 +982,7 @@ function FaqAccordion() {
     {
       question: "Os móveis possuem garantia?",
       answer:
-        "Sim, oferecemos 5 anos de garantia em todos os nossos móveis, cobrindo defeitos de fabricação e instalação.",
+        "Sim, oferecemos 10 anos de garantia em todos os nossos móveis, cobrindo defeitos de fabricação e instalação.",
       color: "amber",
     },
     {
