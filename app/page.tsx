@@ -547,61 +547,79 @@ export default function Home() {
           </span>
         </div>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 text-center font-display">
-            O que nossos clientes dizem
-          </h2>
-          <p className="text-amber-500 italic text-xl sm:text-2xl lg:text-3xl xl:text-4xl mb-12 sm:mb-16 text-center font-serif">
-            histórias de transformação
-          </p>
+         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 text-center font-display">
+      O que nossos clientes dizem
+    </h2>
+    <p className="text-amber-500 italic text-xl sm:text-2xl lg:text-3xl xl:text-4xl mb-12 sm:mb-16 text-center font-serif">
+      histórias de transformação
+    </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {[1, 2, 3].map((i) => (
-              <div
-                key={i}
-                className="bg-gradient-to-b from-amber-900/40 via-amber-950/30 to-black/70 p-6 sm:p-8 lg:p-10 rounded-xl border border-amber-800/30 backdrop-blur-sm relative transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-2xl hover:shadow-amber-900/20"
-              >
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                  <div className="w-16 h-16 rounded-full border-2 border-amber-500 overflow-hidden p-1 bg-gradient-to-br from-amber-900/50 to-black">
-                    <div className="rounded-full overflow-hidden w-full h-full">
-                      <Image
-                        src={`/placeholder.svg?height=100&width=100&query=professional headshot person ${i}`}
-                        alt={`Cliente ${i}`}
-                        width={64}
-                        height={64}
-                        className="object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="flex justify-center mb-6 mt-10">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-amber-500 text-amber-500" />
-                  ))}
-                </div>
-                <p className="text-gray-300 text-center italic mb-8 font-serif text-sm sm:text-base">
-                  "A Vivah superou todas as minhas expectativas. O projeto ficou exatamente como eu imaginava, com
-                  acabamento impecável e entrega no prazo. Recomendo a todos que buscam qualidade e excelência."
-                </p>
-                <div className="text-center">
-                  <h4 className="text-amber-400 font-semibold text-lg font-display">Ana Claudia</h4>
-                  <p className="text-sm text-gray-400">Cliente desde 2021</p>
-                </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      {[
+        {
+          name: "Ana Claudia",
+          since: "Cliente desde 2021",
+          quote:
+            "A Vivah superou todas as minhas expectativas. O projeto ficou exatamente como eu imaginava, com acabamento impecável e entrega no prazo. Recomendo a todos que buscam qualidade e excelência.",
+        },
+        {
+          name: "Marcos Oliveira",
+          since: "Cliente desde 2023",
+          quote:
+            "Fiquei impressionado com o cuidado em cada detalhe. A equipe foi extremamente profissional, e o resultado final transformou completamente meu espaço. Uma experiência realmente acima da média!",
+        },
+        {
+          name: "Renata Lima",
+          since: "Cliente desde 2022",
+          quote:
+            "Desde o primeiro contato, senti que estava em boas mãos. Atendimento humano, soluções criativas e um resultado que me emocionou. Indico sem pensar duas vezes!",
+        },
+      ].map((testimonial, i) => (
+        <div
+          key={i}
+          className="bg-gradient-to-b from-amber-900/40 via-amber-950/30 to-black/70 p-6 sm:p-8 lg:p-10 rounded-xl border border-amber-800/30 backdrop-blur-sm relative transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-2xl hover:shadow-amber-900/20"
+        >
+          <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
+            <div className="w-16 h-16 rounded-full border-2 border-amber-500 overflow-hidden p-1 bg-gradient-to-br from-amber-900/50 to-black">
+              <div className="rounded-full overflow-hidden w-full h-full">
+                <Image
+                  src={`/placeholder.svg?height=100&width=100&query=professional headshot person ${i + 1}`}
+                  alt={`Cliente ${testimonial.name}`}
+                  width={64}
+                  height={64}
+                  className="object-cover"
+                />
               </div>
+            </div>
+          </div>
+          <div className="flex justify-center mb-6 mt-10">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <Star key={star} className="w-5 h-5 fill-amber-500 text-amber-500" />
             ))}
           </div>
-
-          <div className="mt-12 sm:mt-16 text-center">
-            <Button
-              onClick={() => openWhatsApp("Olá! Gostaria de ver mais depoimentos de clientes da Vivah.")}
-              variant="outline"
-              className="border-amber-500 text-amber-500 hover:bg-amber-500/10 rounded-full px-6 sm:px-8 py-4 text-base sm:text-lg font-serif"
-            >
-              VER MAIS DEPOIMENTOS
-            </Button>
+          <p className="text-gray-300 text-center italic mb-8 font-serif text-sm sm:text-base">
+            "{testimonial.quote}"
+          </p>
+          <div className="text-center">
+            <h4 className="text-amber-400 font-semibold text-lg font-display">{testimonial.name}</h4>
+            <p className="text-sm text-gray-400">{testimonial.since}</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+    <div className="mt-12 sm:mt-16 text-center">
+      <Button
+        onClick={() => openWhatsApp("Olá! Gostaria de ver mais depoimentos de clientes da Vivah.")}
+        variant="outline"
+        className="border-amber-500 text-amber-500 hover:bg-amber-500/10 rounded-full px-6 sm:px-8 py-4 text-base sm:text-lg font-serif"
+      >
+        VER MAIS DEPOIMENTOS
+      </Button>
+    </div>
+  </div>
+</section>
 
       {/* Projects Counter */}
       <section className="py-16 sm:py-20 lg:py-24 bg-black relative overflow-hidden">
