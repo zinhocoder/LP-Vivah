@@ -64,13 +64,16 @@ export default function Home() {
               >
                 SOLICITE UM ORÇAMENTO GRATUITO
               </Button>
-              <Button
-                onClick={() => openWhatsApp("Olá! Gostaria de conhecer os projetos da Vivah Móveis Planejados.")}
-                variant="outline"
-                className="border-2 border-amber-500 text-amber-400 hover:bg-amber-500/20 rounded-full px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-base lg:text-lg font-semibold transition-all duration-300"
-              >
-                CONHEÇA NOSSOS PROJETOS
-              </Button>
+             <Button
+  onClick={() => {
+    document.getElementById("servicos")?.scrollIntoView({ behavior: "smooth" });
+  }}
+  variant="outline"
+  className="border-2 border-amber-500 text-amber-400 hover:bg-amber-500/20 rounded-full px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-base lg:text-lg font-semibold transition-all duration-300"
+>
+  CONHEÇA NOSSOS PROJETOS
+</Button>
+
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8">
               <div className="flex -space-x-2">
@@ -235,14 +238,7 @@ export default function Home() {
                 <h3 className="text-xl sm:text-2xl text-amber-400 mb-2 font-semibold">Cozinhas</h3>
                 <p className="text-white mb-4 text-base sm:text-base">
                   Funcionalidade e elegância para o coração da sua casa
-                </p>
-                <Button
-                  onClick={() => openWhatsApp("Olá! Gostaria de ver projetos de cozinhas planejadas.")}
-                  variant="outline"
-                  className="border-amber-500 text-amber-500 hover:bg-amber-500/10 rounded-full text-sm sm:text-base"
-                >
-                  Ver projetos <ChevronRight className="ml-2 w-4 h-4" />
-                </Button>
+                </p>        
               </div>
             </div>
 
@@ -257,13 +253,7 @@ export default function Home() {
               <div className="absolute bottom-0 left-0 p-4 sm:p-6">
                 <h3 className="text-xl sm:text-2xl text-amber-400 mb-2 font-semibold">Salas</h3>
                 <p className="text-white mb-4 text-base sm:text-base">Ambientes sofisticados para receber e relaxar</p>
-                <Button
-                  onClick={() => openWhatsApp("Olá! Gostaria de ver projetos de salas planejadas.")}
-                  variant="outline"
-                  className="border-amber-500 text-amber-500 hover:bg-amber-500/10 rounded-full text-sm sm:text-base"
-                >
-                  Ver projetos <ChevronRight className="ml-2 w-4 h-4" />
-                </Button>
+               
               </div>
             </div>
 
@@ -278,13 +268,7 @@ export default function Home() {
               <div className="absolute bottom-0 left-0 p-4 sm:p-6">
                 <h3 className="text-xl sm:text-2xl text-amber-400 mb-2 font-semibold">Dormitórios</h3>
                 <p className="text-white mb-4 text-base sm:text-base">Conforto e organização para seu descanso</p>
-                <Button
-                  onClick={() => openWhatsApp("Olá! Gostaria de ver projetos de dormitórios planejados.")}
-                  variant="outline"
-                  className="border-amber-500 text-amber-500 hover:bg-amber-500/10 rounded-full text-sm sm:text-base"
-                >
-                  Ver projetos <ChevronRight className="ml-2 w-4 h-4" />
-                </Button>
+                
               </div>
             </div>
           </div>
@@ -303,13 +287,7 @@ export default function Home() {
                 <p className="text-white mb-4 text-base sm:text-base">
                   Espaços produtivos e inspiradores para trabalhar
                 </p>
-                <Button
-                  onClick={() => openWhatsApp("Olá! Gostaria de ver projetos de home office planejado.")}
-                  variant="outline"
-                  className="border-amber-500 text-amber-500 hover:bg-amber-500/10 rounded-full text-sm sm:text-base"
-                >
-                  Ver projetos <ChevronRight className="ml-2 w-4 h-4" />
-                </Button>
+                
               </div>
             </div>
 
@@ -324,13 +302,7 @@ export default function Home() {
               <div className="absolute bottom-0 left-0 p-4 sm:p-6">
                 <h3 className="text-xl sm:text-2xl text-amber-400 mb-2 font-semibold">Banheiros</h3>
                 <p className="text-white mb-4 text-base sm:text-base">Elegância e praticidade para seu bem-estar</p>
-                <Button
-                  onClick={() => openWhatsApp("Olá! Gostaria de ver projetos de banheiros planejados.")}
-                  variant="outline"
-                  className="border-amber-500 text-amber-500 hover:bg-amber-500/10 rounded-full text-sm sm:text-base"
-                >
-                  Ver projetos <ChevronRight className="ml-2 w-4 h-4" />
-                </Button>
+                
               </div>
             </div>
 
@@ -345,13 +317,7 @@ export default function Home() {
               <div className="absolute bottom-0 left-0 p-4 sm:p-6">
                 <h3 className="text-xl sm:text-2xl text-amber-400 mb-2 font-semibold">Closets</h3>
                 <p className="text-white mb-4 text-base sm:text-base">Organização e sofisticação para suas roupas</p>
-                <Button
-                  onClick={() => openWhatsApp("Olá! Gostaria de ver projetos de closets planejados.")}
-                  variant="outline"
-                  className="border-amber-500 text-amber-500 hover:bg-amber-500/10 rounded-full text-sm sm:text-base"
-                >
-                  Ver projetos <ChevronRight className="ml-2 w-4 h-4" />
-                </Button>
+               
               </div>
             </div>
           </div>
